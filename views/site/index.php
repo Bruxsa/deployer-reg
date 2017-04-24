@@ -2,12 +2,12 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Веб-сервер ИТФ';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Веб-сервер ИТФ!</h1>
+        <h1>Веб-сервер ИТФ</h1>
 
         <p class="lead">
             <p>Сервер предназначен для размещения проектов студентов и преподавателей ИТФ НГУЭУ.</p>
