@@ -38,6 +38,8 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Информация', 'url' => ['/site/index']],
             ['label' => 'Регистрация проекта', 'url' => ['/reg/index']],
+            ['label' => 'MySQL', 'url' => ['/site/mysql']],
+            ['label' => 'FAQ', 'url' => ['/site/faq']],
         ],
     ]);
     NavBar::end();

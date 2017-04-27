@@ -62,6 +62,16 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+    public function actionMysql()
+    {
+        return $this->render('mysql');
+    }
+    
+    public function actionFaq()
+    {
+        return $this->render('faq');
+    }
 
     /**
      * Login action.
