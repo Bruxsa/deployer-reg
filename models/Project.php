@@ -49,6 +49,8 @@ class Project extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['status_project'], 'default', 'value' => 1],
+            [['use_mysql'], 'default', 'value' => 1],
             [['name', 'group', 'git'], 'required', 'message' => 'Поле обязательно для заполнения'],
             [['project_id', 'curator_id', 'status_project', 'files_size', 'use_mysql', 'use_composer', 'user_npm', 'projectcol', 'user_id'], 'integer'],
             [['description'], 'string'],
