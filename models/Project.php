@@ -15,7 +15,7 @@ use Yii;
  * @property string $description
  * @property string $git
  * @property string $subdomain
- * @property integer $status_progect
+ * @property integer $status_project
  * @property string $approve_code
  * @property string $reject_code
  * @property string $date_add
@@ -50,7 +50,7 @@ class Project extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'group', 'git'], 'required', 'message' => 'Поле обязательно для заполнения'],
-            [['project_id', 'curator_id', 'status_progect', 'files_size', 'use_mysql', 'use_composer', 'user_npm', 'projectcol', 'user_id'], 'integer'],
+            [['project_id', 'curator_id', 'status_project', 'files_size', 'use_mysql', 'use_composer', 'user_npm', 'projectcol', 'user_id'], 'integer'],
             [['description'], 'string'],
             [['git'], 'validGit', 'message' => ''],
             [['git'], 'unique', 'message' => 'Этот проект уже выложен'],
@@ -75,7 +75,7 @@ class Project extends \yii\db\ActiveRecord
             'description' => 'Description',
             'git' => 'Ссылка на git-репозиторий',
             'subdomain' => 'Subdomain',
-            'status_progect' => 'Status Progect',
+            'status_project' => 'Status Progect',
             'approve_code' => 'Approve Code',
             'reject_code' => 'Reject Code',
             'date_add' => 'Date Add',
