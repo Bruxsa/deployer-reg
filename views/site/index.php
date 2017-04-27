@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = 'Веб-сервер ИТФ';
 ?>
@@ -30,6 +31,6 @@ $this->title = 'Веб-сервер ИТФ';
             </p>
         </p>
 
-        <p><a class="btn btn-lg btn-success" href="/reg/index">Отправить заявку</a></p>
+        <p><?= Html::a('Отправить заявку', ['/reg/index'], ['class' => 'btn btn-lg btn-success']) ?></p>
     </div>
 </div>
