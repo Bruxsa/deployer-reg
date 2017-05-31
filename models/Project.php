@@ -57,7 +57,8 @@ class Project extends \yii\db\ActiveRecord
             [['git'], 'validGit', 'message' => ''],
             [['git'], 'unique', 'message' => 'Этот проект уже выложен'],
             [['date_add', 'date_check', 'date_size'], 'safe'],
-            [['name', 'group', 'title', 'git', 'subdomain', 'approve_code', 'reject_code'], 'string', 'max' => 45],
+            [['git'], 'string', 'max' => 100],
+            [['name', 'group', 'title', 'subdomain', 'approve_code', 'reject_code'], 'string', 'max' => 45],
             [['curator_id'], 'exist', 'skipOnError' => true, 'targetClass' => Curator::className(), 'targetAttribute' => ['curator_id' => 'curator_id']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'user_id']],
         ];
